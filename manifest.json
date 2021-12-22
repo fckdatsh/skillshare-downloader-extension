@@ -1,0 +1,16 @@
+{
+  "name": "Skillshare Video Hashes",
+  "description": "Solution to get video_hashed_id properties for the skillshare-downloader",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+      "service_worker": "/worker/background.js"
+  },
+  "host_permissions": [
+    "*://*.skillshare.com/"
+  ],
+  "permissions": ["storage", "tabs", "cookies"],
+  "action": {
+      "default_popup": "/assets/html/popup.html"
+  }
+}
